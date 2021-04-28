@@ -44,19 +44,79 @@ body {
     margin-top: 6px;
     padding: 10px;
 }
-.quiz-header-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.header-title {
-    /* border: 1px solid red; */
-    height: 40px;
-    font-size: 20px;
-    padding: 5px 0;
-}
 p {
     font-size: 1.1em;
     padding: 0.08em 0;
+}
+.quiz-header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* CSS for dropdown buttons */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdownBtn {
+    width: 80px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+.dropdown-content {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    background-color: brown;
+    color: white;
+    width: 80px;
+    border: none;
+    text-align: center;
+    transition: visibility 0.2s, opacity 0.3s linear;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btnDown{
+    background-color: #000;
+    color: #eee;
+}
+
+
+
+/* navigation */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#signDisplay {
+    display: none;
+}
+.navBtn {
+    display: inline-block;
+    margin: 0 6px;
+    width: 30px;
+    height: 100%;
+}
+.createBtn-container {
+    position: relative;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 .quiz-container {
     display: grid;

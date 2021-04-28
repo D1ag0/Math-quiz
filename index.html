@@ -12,14 +12,41 @@
 <body>
     <div class="page">
         <div class="quiz-header-grid">
-            <div class="header-title"></div>
-            <div class="header-title">Navigation</div>
-            <div class="header-title">Date:</div>
+            <!-- dropdown for signs -->
+            <div class="dropdown">
+                <div class="dropdownBtn">Sign</div>
+                <div class="dropdown-content">
+                    <a id = "plusBtn" onclick = 'addPlus()'>&plus;</a>
+                    <a id = "minusBtn" onclick = 'addMinus()'>&minus;</a>
+                    <a id = "timesBtn" onclick = 'addTimes()'>&times;</a>
+                    <a id = "divideBtn" onclick = 'addDivide()'>&divide;</a>
+                </div>
+            </div>
+            <!-- dropdown for numbers -->
+            <div class="dropdown">
+                <div class="dropdownBtn">Numbers</div>
+                <div class="dropdown-content">
+                    <a id = "Btn10" onclick = "number10()">10</a>
+                    <a id = "Btn20" onclick = "number20()">20</a>
+                    <a id = "Btn50" onclick = "number50()">50</a>
+                    <a id = "Btn100" onclick = "number100()">100</a> 
+                </div>
+            </div>
+            
+            <div class="column">Date:</div>
             <div class="header-title">Score:</div>
-            <div class="header-title"></div>
+        </div>
+        
+        <br>
+        <!-- start for quiz question -->
+        <div class="createBtn-container">
+            <div class="center">
+                <button class="createBtn" onclick="quickQuiz()">create quiz</button>
+            </div>
         </div>
         <br>
-        <button class="createBtn" onclick="myFunction()">create quiz</button>
+        <br>
+
         <div class="quiz-container">
             <div class="column">
                 <p class="quiz1" id="quiz1">demo</p>
