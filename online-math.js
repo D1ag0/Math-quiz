@@ -72,6 +72,11 @@ function quickQuiz() {
     MathSymbolArray.splice(2,1, a);
     MathSymbolArray.splice(3,1, b);
     MathSymbolArray = MathSymbolArray.filter(item => item);
+    // to check if sign has been chosen
+    if (MathSymbolArray == "") {
+        alert("You have to choose at least one sign!");
+        return;
+    }
     
     console.log(MathSymbolArray);
     

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff8dc;
+    background-color: white;
     font: 12pt "sans-serif";
 }
 * {
@@ -14,7 +14,7 @@ body {
     margin: 1cm auto;
     border: 1px #d3d3d3 solid;
     border-radius: 5px;
-    background: #ffff;
+    background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 @page {
@@ -110,13 +110,12 @@ ul {
     width: 30px;
     height: 100%;
 }
-.createBtn-container {
-    position: relative;
-}
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+
+.generator {
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
 }
 .quiz-container {
     display: grid;
@@ -124,3 +123,7 @@ ul {
     text-align: center;
     /* border: 1px solid red; */
 }
+/* .createBtn {
+    padding: 4px 16px;
+    width: 120px;
+} */
